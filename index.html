@@ -30,12 +30,12 @@
     --sans:  'DM Sans', system-ui, sans-serif;
   }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; min-width: 0; }
   html { font-size: 17px; scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
   body { background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.75; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
   /* ── Nav ── */
-  nav { border-bottom: 1px solid var(--rule); padding: 1.1rem 0; position: sticky; top: 0; z-index: 100; background: var(--paper); overflow: visible; }
+  nav { border-bottom: 1px solid var(--rule); padding: 1.1rem 0; position: sticky; top: 0; z-index: 100; background: var(--paper); }
   .nav-inner { max-width: 1040px; margin: 0 auto; padding: 0 2.5rem; display: flex; justify-content: space-between; align-items: center; position: relative; }
   .nav-brand { font-family: var(--sans); font-size: 0.76rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; }
   .nav-links { display: flex; gap: 2rem; }
@@ -46,13 +46,13 @@
     .nav-toggle { display: block; }
     .nav-links {
       display: none; flex-direction: column; gap: 0;
-      position: absolute; top: calc(100% + 1.1rem); left: 0; right: 0;
+      position: absolute; top: 100%; left: -2.5rem; right: -2.5rem;
       background: var(--paper);
       border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
-      padding: 0.4rem 1.5rem 0.8rem; z-index: 99;
+      padding: 0.4rem 2.5rem 0.8rem; z-index: 99;
     }
     .nav-links.open { display: flex; }
-    .nav-links a { padding: 0.6rem 0 0.6rem 0; border-bottom: 1px solid var(--rule-light); font-size: 0.88rem; }
+    .nav-links a { padding: 0.6rem 0 0.6rem 0; border-bottom: 1px solid var(--rule-light); font-size: 0.88rem; min-width: 0; }
     .nav-links a:last-child { border-bottom: none; }
   }
 
@@ -190,7 +190,11 @@
   .footer-note { font-family: var(--sans); font-size: 0.73rem; color: var(--ink-light); }
 
   .katex { font-size: 1em !important; }
+  .katex-display { overflow-x: auto; overflow-y: hidden; }
+  .katex-html { max-width: 100%; }
   .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; }
+  .data-table td, .data-table th { word-break: break-word; }
+  .tier3-col li, .problem-note, .pr-sub { word-break: break-word; }
   .tier3-col li { padding: 0.3rem 0; }
 
   @media (max-width: 480px) {
@@ -261,7 +265,7 @@
         <div class="hero-stat-l">Landmark results</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-n">23</div>
+        <div class="hero-stat-n">16</div>
         <div class="hero-stat-l">Falsifiable predictions</div>
       </div>
       <div class="hero-stat">
@@ -314,7 +318,7 @@
           <td class="td-result">Cosmological constant \(\Lambda\)</td>
           <td class="td-eq">\(1.13\times10^{-52}\ \text{m}^{-2}\)</td>
           <td class="td-eq">\((1.088\pm0.030)\times10^{-52}\ \text{m}^{-2}\)</td>
-          <td><span class="badge-match">0.17σ</span></td>
+          <td><span class="badge-match">within 1.4σ (3.7%)</span></td>
         </tr>
         <tr>
           <td class="td-result">Higgs boson mass \(m_H\)</td>
@@ -400,9 +404,9 @@
           <li>All Sakharov conditions from SU(21)</li>
           <li>\(\eta_B\sim6\times10^{-10}\) compatible</li>
           <li>\(\lambda_{\rm AD} = 0.42\pm0.18\) derived</li>
-          <li class="li-bold">MOND \(a_0 = 1.2\times10^{-10}\ \text{m/s}^2\) — derived from first principles</li>
+          <li class="li-bold">MOND \(a_0^{\rm DEG} = 8.8\times10^{-11}\ \text{m/s}^2\) — semi-derived, 27% below observed; flagged open item</li>
           <li>Tully–Fisher \(M\propto v^4\) exact</li>
-          <li>\(\sigma_8\) tension resolved</li>
+          <li>\(\sigma_8 = 0.78\pm0.02\) — partially resolving the tension</li>
           <li>\(\nu_{R_1}\) dark matter at 7–10 keV</li>
         </ul>
       </div>
@@ -466,11 +470,11 @@
           <td style="color:var(--ink-light)">Any CPT-odd MDR detection</td>
         </tr>
         <tr>
-          <td class="td-result">MOND acceleration \(a_0\)</td>
-          <td class="td-eq">\(1.2\times10^{-10}\ \text{m/s}^2\)</td>
+          <td class="td-result">MOND acceleration \(a_0^{\rm DEG}\)</td>
+          <td class="td-eq">\(8.8\times10^{-11}\ \text{m/s}^2\)</td>
           <td>SPARC / Vera Rubin</td>
           <td>ongoing</td>
-          <td style="color:var(--ink-light)">\(a_0\) inconsistent with discrete spacing</td>
+          <td style="color:var(--ink-light)">27% below observed — inconsistent with discrete spacing</td>
         </tr>
         <tr>
           <td class="td-result">Structure growth \(\sigma_8\)</td>
@@ -487,13 +491,6 @@
           <td>DESI / Euclid</td>
           <td>2–5 yr</td>
           <td>Any \(5\sigma\) \(w\neq-1\) detection</td>
-        </tr>
-        <tr>
-          <td class="td-result">Environmental Tully–Fisher</td>
-          <td>5–15% variation</td>
-          <td>Vera Rubin</td>
-          <td>2–5 yr</td>
-          <td style="color:var(--ink-light)">No environmental variation</td>
         </tr>
         <tr>
           <td class="td-result">Power spectrum \(P(k)\)</td>
@@ -513,10 +510,10 @@
         </tr>
         <tr>
           <td class="td-result">Neutron EDM \(d_n\)</td>
-          <td class="td-eq">\(< 10^{-40}\ e{\cdot}\text{cm}\)</td>
+          <td class="td-eq">\(2\times10^{-53}\text{–}6\times10^{-40}\ e{\cdot}\text{cm}\)</td>
           <td>n2EDM@PSI</td>
           <td>~2026</td>
-          <td style="color:var(--ink-light)">Signal \(>10^{-27}\) disfavours Nelson–Barr</td>
+          <td style="color:var(--ink-light)">Signal \(>10^{-26}\ e{\cdot}\text{cm}\)</td>
         </tr>
         <tr>
           <td class="td-result">Proton decay \(\tau_p\)</td>
@@ -526,7 +523,7 @@
           <td style="color:var(--ink-light)">\(\tau_p > 10^{35}\ \text{yr}\)</td>
         </tr>
 
-        <tr class="tg-header"><td colspan="5">2030s</td></tr>
+        <tr class="tg-header"><td colspan="5">2030s–2037</td></tr>
         <tr>
           <td class="td-result">Tensor-to-scalar ratio \(r\)</td>
           <td class="td-eq">\(\sim0.004\pm0.002\)</td>
@@ -541,19 +538,47 @@
           <td>~2032</td>
           <td style="color:var(--ink-light)">\(f_{\rm NL} < 1\) rules out discrete genesis</td>
         </tr>
+        <tr>
+          <td class="td-result">Env. Tully–Fisher variation</td>
+          <td>\(\lesssim10\%\) [conditional]</td>
+          <td>Vera Rubin / LSST</td>
+          <td>~2030–35</td>
+          <td style="color:var(--ink-light)">Zero variation at \(5\sigma\)</td>
+        </tr>
         <tr class="tr-bold">
           <td class="td-result">Triple Higgs coupling \(\kappa_\lambda\)</td>
           <td class="td-eq">\(-1.449\pm0.17\)</td>
-          <td>HL-LHC / FCC-hh</td>
-          <td>~2035 / ~2040+</td>
+          <td>HL-LHC</td>
+          <td>~2035</td>
           <td>SM value \(\kappa_\lambda=1\) decisively excluded</td>
         </tr>
         <tr>
+          <td class="td-result">Di-Higgs cross-section \(\sigma_{HH}\)</td>
+          <td class="td-eq">\(57.5\pm10\ \text{fb}\ (1.85\times\text{SM})\)</td>
+          <td>HL-LHC</td>
+          <td>~2035</td>
+          <td style="color:var(--ink-light)">\(\sigma < 40\ \text{fb}\) at \(5\sigma\)</td>
+        </tr>
+        <tr>
           <td class="td-result">Dark matter X-ray line</td>
-          <td>3.5–5 keV (\(\nu_{R_1}\), \(m_s\sim7\text{–}10\ \text{keV}\))</td>
+          <td>\(3.5\text{–}5\ \text{keV}\ (\nu_{R_1},\ m_s\sim7\text{–}10\ \text{keV})\)</td>
           <td>ATHENA</td>
           <td>~2035</td>
           <td style="color:var(--ink-light)">Non-detection in viable window</td>
+        </tr>
+        <tr>
+          <td class="td-result">LISA breathing mode \(^\dagger\)</td>
+          <td class="td-eq">\(h_{\rm br}/h_{\rm tensor}\sim6\times10^{-14}\)</td>
+          <td>LISA</td>
+          <td>~2037</td>
+          <td style="color:var(--ink-light)">Polarisation above \(10^{-3}\)</td>
+        </tr>
+        <tr>
+          <td class="td-result">EMRI phase shift \(^\dagger\)</td>
+          <td class="td-eq">\(\Delta\Phi\sim10^{-82}\ \text{rad (null)}\)</td>
+          <td>LISA</td>
+          <td>~2037</td>
+          <td style="color:var(--ink-light)">Phase anomaly at LISA sensitivity</td>
         </tr>
 
         <tr class="tg-header"><td colspan="5">Long-term</td></tr>
@@ -563,6 +588,13 @@
           <td>PIXIE / Voyage 2050</td>
           <td>15–20 yr</td>
           <td style="color:var(--ink-light)">\(\mu < 10^{-6}\)</td>
+        </tr>
+        <tr>
+          <td class="td-result">Di-Higgs at 100 TeV</td>
+          <td class="td-eq">\(2267\pm400\ \text{fb}\)</td>
+          <td>FCC-hh</td>
+          <td>~2040+</td>
+          <td style="color:var(--ink-light)">—</td>
         </tr>
         <tr>
           <td class="td-result">Eff. Brans–Dicke \(\omega_{\rm BD}^{\rm eff}\)</td>
@@ -581,6 +613,7 @@
       </tbody>
     </table>
     </div>
+    <p style="font-family:var(--sans);font-size:0.74rem;color:var(--ink-light);margin-top:0.6rem;line-height:1.6;">\(^\dagger\) Null prediction: DEG predicts signal below experimental threshold. Detection above threshold would falsify.</p>
 
   </div>
 
@@ -590,8 +623,8 @@
     <div class="problems-grid">
       <div class="problem-cell">
         <p class="problem-label badge-tension">Known tension</p>
-        <p class="problem-title">Higgs coupling \(\kappa_V = 0.713\)</p>
-        <p class="problem-note">Currently \(7.2\sigma\) from the SM value. Resolution pathway identified via DGMLY non-perturbative condensate (Path G). Requires DEG-L Group C lattice measurement of \(C_{\rm NP}\). Stated explicitly as the single most important open tension.</p>
+        <p class="problem-title">Higgs coupling \(\kappa_V = 0.432\)</p>
+        <p class="problem-note">Currently \(14.2\sigma\) from the LHC measurement \(\kappa_V = 1.000\pm0.040\). Resolution pathway identified via DGMLY non-perturbative condensate (Path G). Requires DEG-L Group C lattice measurement of \(C_{\rm NP}\). Stated explicitly as the single most important open tension.</p>
       </div>
       <div class="problem-cell">
         <p class="problem-label badge-tension">Systematic uncertainty</p>
