@@ -178,7 +178,15 @@
   .btn-pdf-sm svg { width: 11px; height: 11px; flex-shrink: 0; }
   .btn-prep { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-light); padding: 0.35rem 0.8rem; white-space: nowrap; }
 
-  /* ── Contact ── */
+  /* ── Zenodo CTA ── */
+  .zenodo-cta { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-top: 1.4rem; padding: 0.9rem 1.2rem; background: var(--accent-pale); border: 1px solid var(--rule); border-left: 2px solid var(--accent-mid); border-radius: 0 3px 3px 0; }
+  .zenodo-label { font-family: var(--sans); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-mid); white-space: nowrap; }
+  .zenodo-link { font-family: var(--sans); font-size: 0.84rem; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; flex: 1; }
+  .zenodo-link:hover { text-decoration: underline; }
+  .zenodo-doi { font-family: var(--sans); font-size: 0.73rem; color: var(--ink-light); white-space: nowrap; }
+  .zenodo-row { border-bottom: 1px solid var(--rule); background: var(--accent-pale); }
+  .zenodo-row:hover { background: var(--accent-pale); filter: brightness(0.97); }
+  @media (max-width: 480px) { .zenodo-cta { flex-direction: column; gap: 0.4rem; } .zenodo-doi { display: none; } }
   .contact-intro { font-size: 1.04rem; color: var(--ink-mid); margin-bottom: 1.8rem; line-height: 1.8; }
   .contact-email { font-family: var(--serif); font-size: 1.4rem; color: var(--accent-mid); text-decoration: none; display: block; margin-bottom: 1rem; }
   .contact-email:hover { text-decoration: underline; }
@@ -281,6 +289,14 @@
       <a href="https://orcid.org/0009-0004-4078-9015" target="_blank">ORCID 0009-0004-4078-9015</a>
       <span class="sep">·</span>
       <a href="#contact">Get in touch</a>
+    </div>
+    <div class="zenodo-cta">
+      <span class="zenodo-label">Full research programme</span>
+      <a href="https://doi.org/10.5281/zenodo.20100217" target="_blank" class="zenodo-link">
+        All derivations, results, and open problems in one document
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-left:0.3rem;vertical-align:middle;flex-shrink:0"><path d="M2 10L10 2M10 2H5M10 2v5"/></svg>
+      </a>
+      <span class="zenodo-doi">doi.org/10.5281/zenodo.20100217</span>
     </div>
   </div>
 
@@ -710,6 +726,20 @@
     <h2>Papers</h2>
     <div class="papers-list">
 
+      <div class="paper-row zenodo-row">
+        <span class="pr-num" style="font-family:var(--sans);font-style:normal;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-mid);">DOI</span>
+        <div>
+          <div class="pr-title">DEG Consolidated Manuscript — Complete Research Programme</div>
+          <div class="pr-sub">All derivations, results, open problems, and falsification targets · Zenodo · doi.org/10.5281/zenodo.20100217</div>
+        </div>
+        <span class="pr-status">Published 2026</span>
+        <a class="btn-pdf-sm" href="https://doi.org/10.5281/zenodo.20100217" target="_blank">
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M10 2H5M10 2v5"/></svg>
+          Zenodo
+        </a>
+      </div>
+      <div style="height:1px;background:var(--rule);margin:0;"></div>
+
       <div class="paper-row" style="background:var(--paper-warm);border-bottom:1px solid var(--rule);">
         <span style="font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);grid-column:1/-1;padding-bottom:0;">Phase 2 · In preparation</span>
       </div>
@@ -776,6 +806,7 @@
       </div>
       <div style="font-size:0.93rem;color:var(--ink-mid);line-height:1.78;padding-top:0.2rem;">
         <p style="margin-bottom:1rem;">All preprints are available directly on this page as PDF. They represent work in progress and will be updated prior to submission.</p>
+        <p style="margin-bottom:1rem;">The complete research programme — all derivations, results, and open problems — is consolidated in a single citable document published on Zenodo: <a href="https://doi.org/10.5281/zenodo.20100217" target="_blank" style="color:var(--accent-mid);text-decoration:none;">doi.org/10.5281/zenodo.20100217</a></p>
         <p style="color:var(--ink-light);font-family:var(--sans);font-size:0.82rem;line-height:1.65;">If you are a physicist encountering DEG for the first time and would like to discuss the approach, its foundations, or its limitations, please feel free to write. I am also happy to share derivation notes on specific points not fully developed in the papers.</p>
       </div>
     </div>
