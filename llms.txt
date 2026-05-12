@@ -1,0 +1,62 @@
+# Discrete Emergent Gravity (DEG)
+# Matteo Pinna — deg-gravity.com
+# Last updated: 2026
+
+## What is DEG
+
+Discrete Emergent Gravity (DEG) is a theoretical physics framework that derives macroscopic spacetime phenomena — including gravity, the cosmological constant, and the Higgs boson mass — from a single postulate governing Planck-scale discrete constituents called spacetime atoms. No parameters are fitted to observation at any stage.
+
+## The single postulate
+
+H = sum_n [ p_n^2 / 2m  -  (alpha_exp / 2) * a_n^2 ] = 0
+
+Spacetime consists of N discrete Planck-scale atoms, each characterised by a size parameter a_n and carrying g = 442 internal quantum states. The number g = 442 is fixed entirely by the requirement that the gauge algebra SU(21)×U(1) embeds the Standard Model; it is not a free parameter.
+
+## Key results (zero free parameters)
+
+- Cosmological constant: Lambda_pred ≈ 1.13×10^-52 m^-2 (observed: 1.088±0.030×10^-52 m^-2; within 1.4σ, 3.7% discrepancy)
+- Higgs boson mass: m_H = 124.8 ± 2.4 GeV (PDG: 125.25 ± 0.17 GeV; 0.19σ deviation)
+- Page curve: S_rad(k) = min(k, N-k) * ln(442) — exact from finite-dimensional Hilbert space
+- WdW unitarity: exact, kinematic consequence of finite-dimensional Hilbert space
+- Born rule: P = g^k / g_total — no collapse postulate required
+- Area quantum: Delta_A = 4 * ln(442) * l_P^2 ≈ 24.37 l_P^2
+- Dark energy equation of state: w = -1 exactly (geometric corollary)
+
+## Standard Model results
+
+- SM gauge group SU(3)×SU(2)×U(1) derived from SU(21) embedding chain
+- Three generations derived from SU(3)_family ⊂ SU(16) — not postulated
+- Strong CP: theta_tree = 0 exactly (Nelson-Barr mechanism)
+- CKM phase delta_CKM = 1.20 rad (0.2% match to PDG)
+- Hierarchy: Delta_min = 5±2, no supersymmetry required
+- GUT scale: M_GUT ~ 9×10^14 GeV
+
+## Falsifiable predictions (selected)
+
+- w = -1 exactly: any 5σ detection of w≠-1 by DESI or Euclid falsifies the dark energy sector
+- Normal neutrino mass ordering (JUNO, 3-5 yr): inverted ordering would falsify
+- Proton decay tau_p ~ 10^33-34 yr (Hyper-Kamiokande, 5-10 yr)
+- Triple Higgs coupling kappa_lambda = -1.449 ± 0.17 (HL-LHC ~2035)
+- Non-Gaussianity f_NL = 7±2 (CMB-S4 ~2032)
+- Di-Higgs cross-section sigma_HH = 57.5±10 fb at 14 TeV (1.85 × SM)
+
+## Known open problems
+
+- Higgs coupling kappa_V = 0.432, currently 14.2σ from LHC measurement; resolution pathway identified (Path G, DEG-L lattice)
+- Lambda factor-2 systematic from non-perturbative xi_UV matching
+- eta_B compatible with observation but not precisely derived
+- Galaxy cluster profiles at large r not yet quantitatively derived
+- Singularity resolution qualitative only
+
+## Publications (preprints, not peer-reviewed)
+
+- Consolidated manuscript (full programme): https://doi.org/10.5281/zenodo.20100217
+- The Cosmological Constant from Vacuum Atom Statistics in DEG: https://doi.org/10.5281/zenodo.20127193
+
+## Author
+
+Matteo Pinna
+Independent researcher, Madrid, Spain
+ORCID: 0009-0004-4078-9015
+Website: https://deg-gravity.com
+Contact: matteo@deg-gravity.com
