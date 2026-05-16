@@ -31,7 +31,7 @@ Further results span gravity, the Standard Model, cosmology, and quantum gravity
 ## Publications (preprints — not peer-reviewed)
 
 - **Consolidated manuscript** (full programme, all derivations):  
-  [doi:10.5281/zenodo.20100217](https://doi.org/10.5281/zenodo.20100217)
+  [doi:10.5281/zenodo.20187796](https://doi.org/10.5281/zenodo.20187796)
 
 - **The Cosmological Constant from Vacuum Atom Statistics in DEG**:  
   [doi:10.5281/zenodo.20127193](https://doi.org/10.5281/zenodo.20127193)
