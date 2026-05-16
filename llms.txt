@@ -26,9 +26,9 @@ Spacetime consists of N discrete Planck-scale atoms, each characterised by a siz
 
 - SM gauge group SU(3)×SU(2)×U(1) derived from SU(21) embedding chain
 - Three generations derived from SU(3)_family ⊂ SU(16) — not postulated
-- Strong CP: theta_tree = 0 exactly (Nelson-Barr mechanism)
+- Strong CP: |theta_tree| < 1e-17, satisfying the 1e-10 bound (Nelson-Barr, approximate)
 - CKM phase delta_CKM = 1.20 rad (0.2% match to PDG)
-- Hierarchy: Delta_min = 5±2, no supersymmetry required
+- Hierarchy: Delta_min = 7.3±0.5, no supersymmetry required
 - GUT scale: M_GUT ~ 9×10^14 GeV
 
 ## Falsifiable predictions (selected)
@@ -50,7 +50,7 @@ Spacetime consists of N discrete Planck-scale atoms, each characterised by a siz
 
 ## Publications (preprints, not peer-reviewed)
 
-- Consolidated manuscript (full programme): https://doi.org/10.5281/zenodo.20100217
+- Consolidated manuscript (full programme): https://doi.org/10.5281/zenodo.20187796
 - The Cosmological Constant from Vacuum Atom Statistics in DEG: https://doi.org/10.5281/zenodo.20127193
 
 ## Author
