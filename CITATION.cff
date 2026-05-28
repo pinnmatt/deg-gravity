@@ -11,7 +11,8 @@ abstract: >
   cosmological constant, the Higgs boson mass, and the Standard Model gauge group
   — from a single Hamiltonian constraint governing Planck-scale spacetime atoms
   with internal degeneracy g=442 from an SU(21)×U(1) gauge structure. Zero free
-  parameters are fitted to observation.
+  parameters are fitted to observation. DEG describes the post-condensation
+  universe (~97% of cosmic history in log energy scale).
 keywords:
   - discrete emergent gravity
   - quantum gravity
@@ -21,18 +22,19 @@ keywords:
   - emergent spacetime
   - SU(21)
   - unification
+  - pre-geometric phase
 license: CC-BY-4.0
 url: "https://deg-gravity.com"
 repository-code: "https://github.com/pinnmatt/deg-gravity"
 date-released: "2026-01-01"
 references:
   - type: article
-    title: "Discrete Emergent Gravity: A Complete Research Programme"
+    title: "Discrete Emergent Gravity: A Complete Research Programme (v3)"
     authors:
       - family-names: Pinna
         given-names: Matteo
-    doi: "10.5281/zenodo.20187796"
-    url: "https://doi.org/10.5281/zenodo.20187796"
+    doi: "10.5281/zenodo.20434554"
+    url: "https://doi.org/10.5281/zenodo.20434554"
   - type: article
     title: "The Cosmological Constant from Vacuum Atom Statistics in Discrete Emergent Gravity"
     authors:
