@@ -7,12 +7,14 @@ authors:
     given-names: Matteo
     orcid: "https://orcid.org/0009-0004-4078-9015"
 abstract: >
-  Discrete Emergent Gravity (DEG) derives macroscopic physics — gravity, the
-  cosmological constant, the Higgs boson mass, and the Standard Model gauge group
-  — from a single Hamiltonian constraint governing Planck-scale spacetime atoms
-  with internal degeneracy g=442 from an SU(21)×U(1) gauge structure. Zero free
-  parameters are fitted to observation. DEG describes the post-condensation
-  universe (~97% of cosmic history in log energy scale).
+  Discrete Emergent Gravity (DEG) is a research programme investigating whether
+  spacetime, gravity, and part of the Standard Model's structure can be derived
+  from a single Hamiltonian constraint governing Planck-scale spacetime atoms
+  with internal degeneracy g=442 from an SU(21)×U(1) gauge structure. Three
+  calibrated inputs are disclosed. Key established results include: SM gauge
+  group from group theory, w=−1 exactly, black hole unitarity, the Higgs boson
+  mass at 0.19σ from two disclosed inputs, and 17 falsifiable predictions.
+  Open problems are stated plainly throughout.
 keywords:
   - discrete emergent gravity
   - quantum gravity
@@ -21,24 +23,17 @@ keywords:
   - Standard Model
   - emergent spacetime
   - SU(21)
-  - unification
   - pre-geometric phase
+  - falsifiable predictions
 license: CC-BY-4.0
 url: "https://deg-gravity.com"
 repository-code: "https://github.com/pinnmatt/deg-gravity"
 date-released: "2026-01-01"
 references:
   - type: article
-    title: "Discrete Emergent Gravity: A Complete Research Programme (v3)"
+    title: "Discrete Emergent Gravity: Spacetime, Gravity, and the Standard Model's Structure from a Single Postulate (v4)"
     authors:
       - family-names: Pinna
         given-names: Matteo
-    doi: "10.5281/zenodo.20434554"
-    url: "https://doi.org/10.5281/zenodo.20434554"
-  - type: article
-    title: "The Cosmological Constant from Vacuum Atom Statistics in Discrete Emergent Gravity"
-    authors:
-      - family-names: Pinna
-        given-names: Matteo
-    doi: "10.5281/zenodo.20127193"
-    url: "https://doi.org/10.5281/zenodo.20127193"
+    doi: "10.5281/zenodo.21724820"
+    url: "https://doi.org/10.5281/zenodo.21724820"
