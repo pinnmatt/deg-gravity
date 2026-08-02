@@ -1,85 +1,97 @@
 # Discrete Emergent Gravity (DEG)
 # Matteo Pinna — deg-gravity.com
-# Last updated: May 2026 (v3)
+# Last updated: 2026 (v4)
 
 ## What is DEG
 
-Discrete Emergent Gravity (DEG) is a theoretical physics framework that derives macroscopic spacetime phenomena — including gravity, the cosmological constant, the Higgs boson mass, and the Standard Model gauge group — from a single Hamiltonian constraint governing Planck-scale discrete constituents called spacetime atoms. No parameters are fitted to observation at any stage.
+Discrete Emergent Gravity (DEG) is a theoretical physics research programme investigating whether spacetime, gravity, and part of the Standard Model's structure can be derived from a single Hamiltonian constraint governing Planck-scale discrete constituents called spacetime atoms.
 
-DEG is a theory of the post-condensation universe. It describes cosmic history from the moment of spacetime atom formation (~T_reheat ~ 10^18 GeV) through today — approximately 97% of cosmic history in log energy scale. The pre-geometric epoch that preceded atom condensation lies outside the single-postulate framework by construction, in the same sense QCD does not derive the electroweak gauge group.
+DEG describes the post-condensation universe — from spacetime atom formation onward. The pre-geometric epoch preceding condensation lies outside the single-postulate framework by construction, in the same sense QCD does not derive the electroweak gauge group.
 
 ## The single postulate
 
 H = sum_n [ p_n^2 / 2m  -  (alpha_exp / 2) * a_n^2 ] = 0
 
-Spacetime consists of N discrete Planck-scale atoms, each characterised by a size parameter a_n and carrying g = 442 internal quantum states. The number g = 442 is fixed entirely by the requirement that the gauge algebra SU(21)×U(1) embeds the Standard Model; it is not a free parameter.
+Spacetime consists of N discrete Planck-scale atoms, each characterised by a size parameter a_n and carrying g = 442 internal quantum states. g = 442 follows from the requirement that the gauge algebra SU(21)×U(1) embeds the Standard Model, given the adjoint-plus-doublet representation choice. The representation choice and the selection of SU(21) carry honest caveats detailed in the manuscript.
 
-## Key results (zero free parameters)
+## Three calibrated inputs
 
-- Cosmological constant: Lambda_pred = 1.13×10^-52 m^-2 (observed: 1.088±0.030×10^-52 m^-2; within 1.4σ, 3.7% discrepancy) [approximate]
-- Higgs boson mass: m_H = 124.8 ± 2.4 GeV (PDG: 125.25 ± 0.17 GeV; 0.19σ) [approximate]
-- Page curve: S_rad(k) = min(k, N-k) * ln(442) — exact at leading order from finite-dimensional Hilbert space
-- WdW unitarity: exact, kinematic consequence of finite-dimensional Hilbert space
-- Born rule: P = g^k / g_total — no collapse postulate required [semi-derived]
-- Area quantum: Delta_A = 4 * ln(442) * l_P^2 ≈ 24.37 l_P^2 [derived]
-- Dark energy equation of state: w = -1 exactly [exact geometric corollary]
-- w = 1/3 at quantum-classical transition [derived] — radiation domination is a theorem
-- Second law dS/dtau = 9 k_B N > 0 [exact theorem]
-- Singularity resolution: a_n = 0 requires tau → -∞ [approximate theorem]
+The programme uses three disclosed, calibrated inputs — not independently derived:
+1. alpha_exp^cosm: calibrated to match Lambda_obs (cosmological constant magnitude)
+2. epsilon_alpha: Higgs EWSB parameter
+3. epsilon_beta: Higgs EWSB parameter
+
+## Key results (6 — derived from the single postulate)
+
+- Higgs boson mass: m_H = 124.8 ± 2.4 GeV, 0.19σ from PDG [two EWSB inputs disclosed]
+- Dark energy: w = -1 exactly [exact geometric corollary of the constraint structure]
+- Area quantum: Delta_A = 4*ln(442)*l_P^2 ≈ 24.37 l_P^2 [conditional: j=j_min dominance; BH coefficient imported]
+- Barbero-Immirzi analogue: gamma_DEG ≈ 2.24 [derived from g=442]
+- Page curve: S_rad(k) = min(k, N-k)*ln(442) [exact at leading order, finite-dim Hilbert space]
+- WdW unitarity: exact [kinematic from finite-dim Hilbert space]
 
 ## Standard Model results
 
 - SM gauge group SU(3)×SU(2)×U(1) derived from SU(21) embedding chain
-- Three generations derived from SU(3)_family ⊂ SU(16) — not postulated
-- Strong CP: |theta_tree| < 10^-17, satisfying the 10^-10 bound (Nelson-Barr, approximate)
-- CKM phase delta_CKM = 1.20 rad (0.2% match to PDG)
-- Hierarchy: Delta_min = 7.3±0.5, no supersymmetry required
-- GUT scale: M_GUT ~ 9×10^14 GeV
-- FN parameter epsilon = e^{-3/2} ≈ 0.223 [approximate]
+- Family symmetry SU(3)_fam identified; five-to-three generation reduction [open problem]
+- All SM quantum numbers verified from decomposition
+- Strong CP: theta_tree = 0 [conditional on NB conditions]
+- CKM phase delta_CKM = 1.20 rad [input used to fix phi_DEG]
+- Hierarchy: Delta_min = 7.3±0.5, no SUSY required [approximate]
+- M_GUT ~ 9×10^14 GeV [provisional]
 
 ## Cosmological results
 
-- Flatness Omega = 1 from discrete Hartle-Hawking, no tuning [derived]
-- No inflaton required; reheating from atom-matter coupling at T ~ 10^18 GeV
-- Baryon asymmetry eta_B ~ 6×10^-10 [compatible, not precisely derived]
-- MOND acceleration a_0^DEG = 8.8×10^-11 m/s^2 [semi-derived; 27% below observed — open item]
+- Flatness Omega = 1 from discrete Hartle-Hawking [derived]
+- w = -1 exact geometric corollary; Lambda_obs magnitude is a calibrated input
+- w = 1/3 at quantum-classical transition [asserted; physical basis not yet derived]
+- MOND acceleration a_0^DEG = 8.6×10^-11 m/s^2 [semi-derived; 28% below observed]
 - Tully-Fisher M ∝ v^4 [derived]
-- sigma_8 = 0.78±0.02, partially resolving CMB vs weak-lensing tension [approximate]
-- Dark matter candidate: nu_R1 sterile neutrino at 7-10 keV
+- No inflaton required; no gravitino/moduli problem
+- All Sakharov conditions structurally present from SU(21)
+- eta_B ~ 6×10^-10 reproduced by construction of phi_DEG [not an independent prediction]
+- CMB spectral index n_s ≈ 0.963: fossil of pre-geometric phase; not a DEG prediction
 
 ## CMB domain-of-validity note
 
-The spectral index n_s ≈ 0.963 is NOT a DEG prediction. The DEG quantum epoch gives n_s = 4, which is the correct result for fluctuations of the already-formed spacetime atom lattice and simultaneously proves that the atoms were not present when the primordial spectrum was generated. The observed tilt is a fossil of the pre-geometric phase G̃ ⊃ SU(21)×U(1). This is a diagnostic, not a failure. Identifying G̃ is the natural next extension.
+The DEG quantum epoch gives n_s = 4 [asserted]. The observed n_s ≈ 0.963 is a fossil of the pre-geometric phase G̃ ⊃ SU(21)×U(1). Seven internal mechanisms exhausted; one (Euclidean Bessel) under active investigation. Identifying G̃ is the natural next extension.
 
-## Falsifiable predictions (17 total, v3)
+## Falsifiable predictions (17 formal entries)
 
-- w = -1 exactly: any 5σ detection of w≠-1 by DESI or Euclid falsifies the dark energy sector
-- Normal neutrino mass ordering (JUNO, 3-5 yr): inverted ordering would falsify
-- Proton decay tau_p ~ 10^33-34 yr (Hyper-Kamiokande, 5-10 yr)
-- Triple Higgs coupling kappa_lambda = -1.449 ± 0.17 (HL-LHC ~2035)
-- Di-Higgs cross-section sigma_HH = 57.5±10 fb at 14 TeV, 1.85× SM (HL-LHC ~2035)
-- Tensor-to-scalar ratio r = 0.00452±0.002 [semi-derived] (CMB-S4 ~2032; r > 0.01 falsifies)
-- Non-Gaussianity f_NL ~ 0.008 (null prediction) [derived] (CMB-S4 ~2032; f_NL > 1 at 2σ falsifies)
-- No WIMP direct detection signal (LZ/XENONnT)
-- CPT-odd Lorentz violation eta_1 = 0 (Fermi-LAT/CTA)
-- P(k) two-scale suppression at k~0.4 and k~90 h/Mpc (DESI/Euclid)
-- Dark matter X-ray line at 3.5-5 keV from nu_R1 decay (ATHENA ~2035)
-- LISA breathing mode h_br/h_tensor ~ 6×10^-14 (null) (LISA ~2037)
-- EMRI phase shift ~10^-82 rad (null) (LISA ~2037)
-- CMB mu-distortion mu ~ 10^-5 (PIXIE/Voyage 2050)
+1. CPT-odd LV eta_1 = 0 | Fermi-LAT/CTA | now
+2. No WIMP direct detection | LZ/XENONnT | now
+3. w = -1 exactly | DESI/Euclid | 2-5 yr; any 5σ w≠-1 falsifies
+4. P(k) two-scale suppression at k~0.4 and k~90 h/Mpc | DESI/Euclid | 2-5 yr
+5. Normal neutrino ordering, m_nu1 ~ 10^-5 eV | JUNO | 3-5 yr
+6. kappa_V = 0.432 [open tension; ceiling 0.797 analytical] | HL-LHC | ~5 yr
+7. nEDM in range 2×10^-53 – 6×10^-40 e·cm | n2EDM@PSI | ~2026
+8. Proton decay tau_p ~ 10^33-34 yr [provisional] | Hyper-Kamiokande | 5-10 yr
+9. r = 0.00452 ± 0.002 [semi-derived] | CMB-S4/LiteBIRD | ~2032; r > 0.01 falsifies
+10. f_NL ≈ 0.0076 null [asserted] | CMB-S4 | ~2032; f_NL > 1 at 2σ falsifies
+11. Env. Tully-Fisher variation ≤10% [conditional] | Vera Rubin/LSST | ~2030-35
+12. Di-Higgs sigma_HH = 57.5±10 fb (1.85×SM) | HL-LHC | ~2035
+13. Dark matter X-ray line 3.5-5 keV (nu_R1) | ATHENA | ~2035
+14. LISA breathing mode: undetectable if a ≳ pm-scale [conditional on unconfirmed a] | LISA | ~2037
+15. EMRI phase shift ~10^-82 rad (null) | LISA | ~2037
+16. CMB mu-distortion mu ~ 10^-5 [conditional] | PIXIE/Voyage 2050 | 15-20 yr
+17. Di-Higgs at 100 TeV: 2267±400 fb | FCC-hh | ~2040+
 
-## Known open problems (honest statement)
+## Open problems (selected — not a complete list)
 
-- Higgs coupling kappa_V = 0.432: 14.2σ at tree level; analytical ceiling 5.1σ (VMD+30%); no path above 0.920 analytically; requires DEG-L Group C lattice computation — the single most important open tension
-- Lambda_pred factor-2 systematic from non-perturbative xi_UV matching; central value unaffected
-- eta_B compatible with observation but not precisely derived
-- Galaxy cluster profiles at large r not yet quantitatively derived
-- Spectral index n_s: not derivable within current framework; pre-geometric phase G̃ identified as structural resolution; eight internal mechanisms exhausted
+- kappa_V = 0.432: 14.2σ at tree level; analytical ceiling 5.1σ (VMD+30%); no path above 0.920; requires DEG-L Group C
+- alpha_exp^cosm: calibrated input; multiple derivation mechanisms tested and ruled out; theoretical breakthrough required
+- Atomic lattice spacing a: no derivation exists; RG route gives wrong sign; weak lower bound from LISA
+- Five-to-three generation reduction: branching rule gives 5 family-triplet copies, not 3; unresolved
+- Sterile neutrino mass and leptogenesis: seesaw misses M_R1 target by ~13 orders; standard leptogenesis 5 orders short of L_active needed; Affleck-Dine closes most but residual factor ~6 is fit not derived
+- Bekenstein-Hawking coefficient: g_eff=1 gives zero screen entropy, not 1/4; imported assumption
+- Galaxy cluster profiles at large r: MOND provides partial screening only; sigma_8 calculation does not reproduce its own stated product
+- Spectral index n_s: outside current framework; 7 mechanisms exhausted; 1 under investigation
+- Higgs EWSB parameters epsilon_alpha, epsilon_beta: calibrated inputs; Coleman-Weinberg potential does not reproduce them from first principles
+- DEG-L lattice: 4 ensemble specs complete; ~10^5 GPU-hours; would sharpen m_H and constrain kappa_V
 
-## Publications (preprints, not peer-reviewed)
+## Manuscript
 
-- DEG Consolidated Manuscript v3 (full programme, all derivations): https://doi.org/10.5281/zenodo.20434554
-- The Cosmological Constant from Vacuum Atom Statistics in DEG: https://doi.org/10.5281/zenodo.20127193
+- DEG Consolidated Manuscript v4: https://doi.org/10.5281/zenodo.21724820
 
 ## Presentations
 
